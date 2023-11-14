@@ -1,92 +1,56 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-header {
-    height: 60vh;
-    background-image: url('images/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 34vw;
 }
 
-
-section {
-    padding: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.feature {
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 40px;
+    flex-direction: column;
 }
 
-.feature-image {
-    width: 150px;
-    /* Set a fixed width */
-    height: 150px;
-    /* Set a fixed height */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s;
-}
-
-.feature-content {
-    width: 50%;
-    text-align: left;
-    animation: slideInRight 1s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-h2 {
+h1 {
     color: #333;
 }
 
-p {
-    color: #666;
+select, input[type="text"], button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
+select {
     width: 100%;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.error-message {
+    color: red;
 }
